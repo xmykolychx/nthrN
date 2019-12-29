@@ -6,16 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div>
+  <header class="page-header">
+    <div class="page-header__logo">
       <img src="img/logo.png" alt="logo">
     </div>
 
-    <div>
+    <div class="page-header__navi">
       <nav>
-        <ul>
+        <ul class="page-header__navi--ul">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Work</a></li>
@@ -27,7 +30,7 @@
       </nav>
     </div>
 
-    <div>
+    <div class="page-header__info">
       <h2>We Design and Develop</h2>
       <p>
         We are a new design studio based in USA. We have over 
@@ -40,49 +43,49 @@
 
   <main>
     <section class="about">
-      <h3>About Us</h3>
-      <p>
+      <h3 class="about__header">About Us</h3>
+      <p class="about__info">
         Divide have don't man wherein air fourth. Own itself make have night won't make. 
         A you under Seed appear which good give. Own give air without fowl moveth dry first 
         heaven fruit, dominion she'd won't very all.
       </p>
-        <img src="img/signature.jpg" alt="sign">
+      <img src="img/signature.jpg" alt="sign">
     </section>
 
     <section class="skills">
-      <div>
+      <div class="skills__right">
         <h3>Professional Skills</h3>
-        <img src="img/uiux.png" alt="uiux">
-        <img src="img/webdev.jpg" alt="webdev">
-        <img src="img/mark.jpg" alt="mark">
+        <img src="img/sk/uiux.png" alt="uiux">
+        <img src="img/sk/webdev.jpg" alt="webdev">
+        <img src="img/sk/mark.jpg" alt="mark">
       </div>
 
-      <div>
+      <div class="skills__left">
         <img src="img/img.jpg" alt="yourimg">
       </div>
     </section>
 
     <section class="numbers">
       <div class="numbers__pc">
-        <img src="img/pe-7s-portfolio.png" alt="pc">
+        <img src="img/num/pe-7s-portfolio.png" alt="pc">
         <p>548</p>
         <p>Projects Completed</p>
       </div>
 
       <div class="numbers__wh">
-        <img src="img/pe-7s-clock.png" alt="wh">
+        <img src="img/num/pe-7s-clock.png" alt="wh">
         <p>1465</p>
         <p>Working Hours</p>
       </div>
 
       <div class="numbers__ps">
-        <img src="img/pe-7s-star.png" alt="ps">
+        <img src="img/num/pe-7s-star.png" alt="ps">
         <p>612</p>
         <p>Positive Feedbacks</p>
       </div>
 
       <div class="numbers__hc">
-        <img src="img/pe-7s-like.png" alt="hp">
+        <img src="img/num/pe-7s-like.png" alt="hp">
         <p>735</p>
         <p>Happy Clients</p>
       </div>
@@ -97,7 +100,7 @@
       <img src="img/1.jpg" alt="">
       <img src="img/1.jpg" alt="">
       <img src="img/1.jpg" alt="">
-      <button>Load More Work</button>
+      <button class="work__btn">Load More Work</button>
     </section>
 
     <section class="workprocess">
@@ -219,19 +222,19 @@
         if this could be the start of something beautiful.
       </p>
       <form action="URL" method="get">
-        <p>
+        <p class="name">
           Your Name
           <input type="text" name="Name" id="name" placeholder="Your Name">
         </p>
-        <p>
+        <p class="email">
           Your Email
           <input type="email" name="Email" id="email" placeholder="Your Email">
         </p>
-        <p>
+        <p class="title">
           Your Title
           <input type="text" name="Title" id="title" placeholder="Your Title">
         </p>
-        <p>
+        <p class="comment">
           Your Comment
           <input type="text" name="Comment" id="title" placeholder="Your Comment">
         </p>
