@@ -13,6 +13,18 @@ body{
   height: 5797px;
 }
 
+h2,
+h3,
+h4,
+button{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+} 
+
+p{
+  font-family: 'Nunito Sans', sans-serif;
+} 
+
 header{
   height: 670px;
   width: 100%;
@@ -20,7 +32,10 @@ header{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
   ul.page-header__navi--ul{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -29,7 +44,7 @@ header{
     margin-left: 450px;
     a{
       text-decoration: none;
-      margin-right: 30px;
+      padding-left: 30px;
       color: black;
     }
   }
@@ -38,7 +53,6 @@ header{
     width: 600px;
     overflow: auto;
   }
-
 }
 
 .about{
@@ -108,19 +122,22 @@ header{
     border: 1px thin black;
   }
   .work__btn{
-    margin-left: 580px;
+    margin-left: 608px;
   }
 }
 
 .workprocess{
   width: 1170px;
-  height: 729px;
+  height: 850px;
   text-align: center;
   h3, p{
-    margin-left: 110px;
+    margin-left: 190px;
+  }
+  h3{
+    margin-top: 100px;
   }
   video{
-    margin-left: 100px;
+    margin-left: 110px;
   }
 }
 
@@ -129,12 +146,45 @@ header{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  margin-left: 128px;
+  .services__uiux,
+  .services__webdev,
+  .services__app,
+  .services__game,
+  .services__seo,
+  .services__photo,
+  .services__grdes,
+  .services__ill{
+    height: 200px;
+    width: 280px;
+  }
+  h4{
+    text-transform: uppercase;
+  }
 }
 
 .testemonials{
   width: 100%;
   height: 500px;
   background-color: #10c9c3;
+  color: white;
+  text-align: center;
+  #quote{
+    position: relative;
+    top: 160px;
+    font-size: 28px;
+    width: 60%;
+    text-align: center;
+    left: 205px;
+  }
+  #author{
+    position: relative;
+    top: 160px;
+    text-transform: uppercase;
+    text-align: center;
+    right: 45px;
+  }
 }
 
 .clients{
@@ -151,9 +201,17 @@ header{
   width: 100%;
   height: 750px;
   text-align: center;
+  .name{
+    position: relative;
+    right: 140px;
+    top: 62px;
+  }
   .email{
     position: relative;
-    right: 30px;
+    left: 140px;
+  }
+  .contform__btn{
+    background-color: #10c9c3;
   }
 }
 
@@ -169,6 +227,15 @@ header{
     text-decoration: none;
     position: relative;
     padding-right: 50px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
   }
 }
 

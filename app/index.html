@@ -9,6 +9,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
 </head>
 <body>
   <header class="page-header">
@@ -20,7 +23,7 @@
       <nav>
         <ul class="page-header__navi--ul">
           <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="#about_sec">About</a></li>
           <li><a href="">Work</a></li>
           <li><a href="">Process</a></li>
           <li><a href="">Services</a></li>
@@ -42,7 +45,7 @@
   </header>
 
   <main>
-    <section class="about">
+    <section class="about" id="about_sec">
       <h3 class="about__header">About Us</h3>
       <p class="about__info">
         Divide have don't man wherein air fourth. Own itself make have night won't make. 
@@ -197,12 +200,12 @@
     <section class="testemonials">
       <div class="testemonials__slider">
         <blockquote>
-          <p>
-            “ Outstanding job and exceeded all expectations. It was a pleasure 
+          <p id="quote">
+              “Outstanding job and exceeded all expectations. It was a pleasure 
               to work with them on a sizable first project and am looking 
               forward to start the next one asap.”
           </p>
-          <p>Michael Hopkins</p>
+          <p id="author">Michael Hopkins</p>
         </blockquote>
       </div>
     </section>
@@ -223,23 +226,19 @@
       </p>
       <form action="URL" method="get">
         <p class="name">
-          Your Name
-          <input type="text" name="Name" id="name" placeholder="Your Name">
+          <textarea name="" id="" cols="25" rows="2" placeholder="Your name"></textarea>
         </p>
         <p class="email">
-          Your Email
-          <input type="email" name="Email" id="email" placeholder="Your Email">
+          <textarea name="" id="" cols="25" rows="2" placeholder="Your email"></textarea>
         </p>
         <p class="title">
-          Your Title
-          <input type="text" name="Title" id="title" placeholder="Your Title">
+          <textarea name="" id="" cols="60" rows="2" placeholder="Your title"></textarea>
         </p>
         <p class="comment">
-          Your Comment
-          <input type="text" name="Comment" id="title" placeholder="Your Comment">
+          <textarea name="" id="" cols="60" rows="10" placeholder="Your comment"></textarea>
         </p>
       </form>
-      <button type="submit">Send Message</button>
+      <button type="submit" class="contform__btn">Send Message</button>
     </section>
   </main>
 
@@ -266,10 +265,10 @@
     <div class="page-footer__fnav">
       <nav>
         <ul>
-          <li>Project</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Carreer</li>
+          <li><a href="#!">Project</a></li>
+          <li><a href="#!">About</a></li>
+          <li><a href="#!">Services</a></li>
+          <li><a href="#!">Carreer</a></li>
         </ul>
       </nav>
     </div>
@@ -277,10 +276,10 @@
     <div class="page-footer__snav">
       <nav>
         <ul>
-          <li>News</li>
-          <li>Events</li>
-          <li>Contact</li>
-          <li>Legals</li>
+          <li><a href="#!">News</a></li>
+          <li><a href="#!">Events</a></li>
+          <li><a href="#!">Contact</a></li>
+          <li><a href="#!">Legals</a></li>
         </ul>
       </nav>
     </div>
@@ -304,5 +303,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 </body>
 </html>
